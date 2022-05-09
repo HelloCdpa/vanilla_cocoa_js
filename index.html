@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="title_id">글제목</p>
+    <button id="title_button" type="button" onclick="buttonClick()">버튼</button>
+
+
+<script>
+    title_id = document.getElementById("title_id");
+    isButtonClick = false;
+
+    addEventListener("mouseover",titleMouseOver);
+
+    function titleMouseOver(){
+        if(isButtonClick){
+            title_id.innerText = "짜잔";
+        }
+        
+    }
+    
+    function buttonClick(){
+        title_id = document.getElementById("title_id");
+        isButtonClick = true;
+    }
+
+
+</script>
+
+</body>
+</html>
